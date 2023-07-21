@@ -1,30 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="#D8E3E8"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    tools:context=".Calender_Activity">
 
-    <!--text view for displaying the selected date-->
+
     <TextView
-        android:id="@+id/idTVDate"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:gravity="center"
-        android:padding="8dp"
+        android:layout_height="@dimen/_30sdp"
+        android:textSize="@dimen/_15ssp"
         android:text="Current Date"
-        android:textAlignment="center"
+        android:id="@+id/TxtDate"
+        android:background="@color/white"
         android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-
-    <!-- Add CalendarView to display the Calendar -->
+        android:gravity="center"/>
     <CalendarView
-        android:id="@+id/calendarView"
+        android:background="@color/white"
+        android:id="@+id/calenderview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/idTVDate"
-        android:layout_marginTop="30dp" />
-
-</RelativeLayout>
+        android:layout_height="wrap_content"/>
+</LinearLayout>
